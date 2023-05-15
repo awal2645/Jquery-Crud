@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>
+       JQuery Crud
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class=" text-center">JQuery Crud</h1>
+      <form id="form">
+        <table class="table table-bordered" id="UserInfo">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+          <tbody id="table_td"></tbody>
+        </table>
+        <h3>Add New</h3>
+        <table class="table table-bordered" id="Add">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="txtId"
+                style="display: none"
+                readonly
+                name="ID"
+                value=""
+              />
+            </td>
+            <td>
+              <input type="text" id="name" name="name" value="" />
+            </td>
+          </tr>
+        </table>
+        <input type="button" id="btnAdd" style="display: block" value="Add" />
+        <input
+          type="button"
+          id="btnUpdate"
+          style="display: none"
+          value="Update"
+        />
+        <br />
+        <div id="output"></div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
